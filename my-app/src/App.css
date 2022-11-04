@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.base {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #263238;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cfd8dc;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inside-header {
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inside-header img{
+  width: 125px;
+  border-radius: 50%;
+  border: 8px solid #37474f;
+}
+
+.header-image {
+  border-right: 1px solid #cfd8dc;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.header-breakdown {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.header-image img {
+  margin-left: 20px;
+}
+
+.summary {
+  padding-top: 215px;
+}
+
+.breakdown{
+    width: 60%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience {
+  margin-bottom: 10px;
+}
+
+.bottom-line {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.green-title {
+  color: #004d40;
+}
+
+/* responsive */
+@media only screen
+and (max-width : 720px) {
+
+  .inside-header {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-image {
+    border-right: none;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 10px;
   }
+
+  .header-breakdown {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .inside-header img{
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #37474f;
+  }
+
+  .summary {
+    padding-top: 150px;
+  }
+
+  .breakdown{
+      width: 80%;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+
 }
