@@ -37,7 +37,7 @@ const experienceList = [
   {
     'title': 'Lead Web Application Engineer (Full-stack)',
     'place': 'Rollins School of Public Health @ Emory',
-    'time': 'Jan 2021 - Current'
+    'time': 'Oct 2013 - Jan 2015'
   },
   {
     'title': 'Software Engineer (Full-stack)',
