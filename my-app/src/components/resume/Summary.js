@@ -2,6 +2,7 @@ import '../../App.css';
 import React from 'react';
 import {
     Box,
+    Link,
     Typography
 } from '@material-ui/core';
 
@@ -17,22 +18,26 @@ const experienceList = [
   {
     'title': 'Senior Software Engineer (Backend)',
     'place': 'Vanderbilt Medical Center',
-    'time': 'Jan 2021 - Current'
+    'time': 'Jan 2021 - Current',
+    'link': 'https://victr.vumc.org/'
   },
   {
     'title': 'Senior Software Engineer (Full-stack)',
     'place': 'Bellhop',
-    'time': 'Sept 2018 – December 2020'
+    'time': 'Sept 2018 – December 2020',
+    'link': 'https://bellhop.com'
   },
   {
     'title': 'Senior Engineer (Full-stack)',
     'place': 'Narrative Content Group',
-    'time': 'Jan 2016 – Sept 2018'
+    'time': 'Jan 2016 – Sept 2018',
+    'link': 'https://narrativecontentgroup.com/'
   },
   {
     'title': 'Senior Engineer (Front-end)',
     'place': 'NBA Digital (National Basketball Association)',
-    'time': 'Jan 2015 – Jan 2016'
+    'time': 'Jan 2015 – Jan 2016',
+    'link': 'https://nba.com'
   },
   {
     'title': 'Lead Web Application Engineer (Full-stack)',
@@ -41,15 +46,16 @@ const experienceList = [
   },
   {
     'title': 'Software Engineer (Full-stack)',
-    'place': 'School of Medicine @ Emory',
+    'place': 'School of Medicine @ Emory - Bioinformatics Group',
     'time': 'July 2013 - Oct 2013'
   },
   {
     'title': 'Software Intern/Engineer (Full-stack)',
-    'place': 'University of Georgia',
+    'place': 'University of Georgia - USAID Research Group',
     'time': ' Oct 2011 - Jun 2013'
   },
   ];
+
 
 const experience = (
   <Box className="breakdown bottom-line">
@@ -58,9 +64,11 @@ const experience = (
           <Typography variant="body2" className="green-title">
             {exp.title}
           </Typography>
+          <Link underline="hover" href={exp.link} color="inherit">
           <Typography variant="body2">
             {exp.place}
           </Typography>
+          </Link>
           <Typography variant="body2">
             {exp.time}
           </Typography>
@@ -72,7 +80,7 @@ const experience = (
 const education = (
   <Box className="breakdown">
     <Typography variant="body2" className="green-title">
-    Bachelor of Science in Information Technology
+    Bachelor of Science
     </Typography>
     <Typography variant="body2">
     Middle Georgia State University
