@@ -73,6 +73,10 @@
   color: #004d40;
 }
 
+.section-header {
+  padding-bottom: 10px;
+}
+
 /* responsive */
 @media only screen
 and (max-width : 920px) {

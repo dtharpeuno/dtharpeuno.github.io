@@ -40,6 +40,14 @@ function Header() {
         Linkedin
         </Link>
         </Typography>
+        <Typography variant="body2">
+        <Link href="https://github.com/dtharpeuno"
+        underline="hover"
+        variant="body2"
+        color="inherit">
+        Github / dtharpeuno
+        </Link>
+        </Typography>
         </Box>
     </Box>
     </Box>

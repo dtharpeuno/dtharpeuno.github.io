@@ -56,9 +56,18 @@ const experienceList = [
   },
   ];
 
+const openSourceContribList = [
+  {
+    'title': 'Raw Data Respository - All of Us (NIH) program',
+    'github': 'https://github.com/all-of-us/raw-data-repository',
+  }
+];
 
 const experience = (
   <Box className="breakdown bottom-line">
+    <Typography variant="body1" className="green-title section-header">
+    Experience
+    </Typography>
     {experienceList.map(exp =>
         <Box className='experience'>
           <Typography variant="body2" className="green-title">
@@ -77,8 +86,31 @@ const experience = (
   </Box>
 )
 
+const open_source_contrib = (
+  <Box className="breakdown bottom-line">
+    <Typography variant="body1" className="green-title section-header">
+    Open-Source Contributions
+    </Typography>
+  {openSourceContribList.map(project => 
+    <Box className='experience'>
+      <Typography variant="body2" className="green-title">
+        {project.title}
+      </Typography>
+      <Link underline="hover" href={project.github} color="inherit">
+        <Typography variant="body2">
+          {project.github}
+        </Typography>
+      </Link>
+    </Box>
+  )}
+  </Box>
+)
+
 const education = (
   <Box className="breakdown">
+    <Typography variant="body1" className="green-title section-header">
+    Education
+    </Typography>
     <Typography variant="body2" className="green-title">
     Bachelor of Science
     </Typography>
@@ -94,6 +126,7 @@ function Summary() {
     <Box className='summary'>
     {summary}
     {experience}
+    {open_source_contrib}
     {education}
     </Box>
     </>
