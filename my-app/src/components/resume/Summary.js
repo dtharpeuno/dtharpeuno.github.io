@@ -63,6 +63,19 @@ const openSourceContribList = [
   }
 ];
 
+const publicationList = [
+  {
+    'title': 'Data Explorer: A Tool for Data Exploration and Cohort Discovery in Massive Multidimensional Datasets.',
+    'description': 'Pathology Informatics Summit 2014, May 13-16, 2014. Pittsburgh, PA — Best Electronic Presentation Pathology Informatics.',
+    'names': 'Kazerouni, A, Tharpe, D, Sharma, A'
+  },
+  {
+    'title': 'Federated Access to Images, Annotations and Measurements to Optimize the Review and Auditing of Imaging Data.',
+    'description': 'Submitted in Clinical Trials.',
+    'names': 'Ashish Sharma, Atlanta, GA; N Saghar; D Tharpe; T Pan, MS; R W Filice, MD'
+  }
+];
+
 const experience = (
   <Box className="breakdown bottom-line">
     <Typography variant="body1" className="green-title section-header">
@@ -106,6 +119,26 @@ const open_source_contrib = (
   </Box>
 )
 
+const publications = (
+  <Box className="breakdown bottom-line">
+    <Typography variant="body1" className="green-title section-header">
+   Publications    </Typography>
+  {publicationList.map(publication =>
+    <Box className='experience'>
+      <Typography variant="body2" className="green-title">
+        {publication.title}
+      </Typography>
+      <Typography variant="body2">
+        {publication.description}
+      </Typography>
+      <Typography variant="body2">
+        {publication.names}
+      </Typography>
+    </Box>
+  )}
+  </Box>
+)
+
 const education = (
   <Box className="breakdown">
     <Typography variant="body1" className="green-title section-header">
@@ -127,6 +160,7 @@ function Summary() {
     {summary}
     {experience}
     {open_source_contrib}
+    {publications}
     {education}
     </Box>
     </>
