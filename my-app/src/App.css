@@ -36,7 +36,7 @@
   border-right: 1px solid #cfd8dc;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 45px;
 }
 
 .header-breakdown {
@@ -51,6 +51,7 @@
 
 .summary {
   padding-top: 215px;
+  padding-bottom: 20px;
 }
 
 .breakdown{
@@ -89,7 +90,7 @@ and (max-width : 920px) {
     border-right: none;
     padding-right: 10px;
     padding-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .header-breakdown {
