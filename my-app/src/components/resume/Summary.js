@@ -49,11 +49,11 @@ const experienceList = [
     'place': 'School of Medicine @ Emory - Bioinformatics Group',
     'time': 'July 2013 - Oct 2013'
   },
-  {
-    'title': 'Software Intern/Engineer (Full-stack)',
-    'place': 'University of Georgia - USAID Research Group',
-    'time': ' Oct 2011 - Jun 2013'
-  },
+  // {
+  //   'title': 'Software Intern/Engineer (Full-stack)',
+  //   'place': 'University of Georgia - USAID Research Group',
+  //   'time': ' Oct 2011 - Jun 2013'
+  // },
   ];
 
 const openSourceContribList = [
