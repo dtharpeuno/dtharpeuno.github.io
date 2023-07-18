@@ -33,7 +33,7 @@ function Header() {
         </Link>
         </Typography>
         <Typography variant="body2">
-        <Link href="https://www.linkedin.com/in/darryltharpe/"
+        <Link href="https://linkedin.com/in/dtharpe1"
         underline="hover"
         variant="body2"
         color="inherit">
