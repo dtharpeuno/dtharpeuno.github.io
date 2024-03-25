@@ -16,8 +16,8 @@ const summary = (
 
 const experienceList = [
   {
-    'title': 'Senior Software Engineer (Backend)',
-    'place': 'Vanderbilt Medical Center',
+    'title': 'Senior Lead Software Engineer (Backend)',
+    'place': 'Vanderbilt Institute for Clinical and Translational Research',
     'time': 'Jan 2021 - Current',
     'link': 'https://victr.vumc.org/'
   },
