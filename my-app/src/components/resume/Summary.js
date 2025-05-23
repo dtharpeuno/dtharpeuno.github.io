@@ -9,9 +9,7 @@ import {
 const summary = (
     <Box className="breakdown bottom-line">
         <Typography variant="body2">
-            Solutions-focused and goal-oriented software engineer with 8+ years of experience in implementing advanced
-            technology and business solutions in public and private industries. Demonstrates strong analytical and
-            problem-solving skills and the ability to follow through with projects from inception to completion.
+            🚀 Lead Software Engineer with over a decade of experience building robust, scalable, and cloud-native applications for healthcare, logistics, and digital media. I specialize in frontend and backend development, API architecture, containerization (Docker), and full-stack solutions using Python, Flask, React, GraphQL, and cloud platforms like GCP and AWS.
         </Typography>
     </Box>
 )
